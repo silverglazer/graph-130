@@ -45,6 +45,14 @@
     </style>
 </head>
     <body>
+        <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        });
+        </script>
       <h1> Optimizing Images</h1>  
         <article class="loki">
             <img src="../images/80.jpg" alt="80 percent jpg sample" height="500px">
