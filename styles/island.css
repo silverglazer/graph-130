@@ -1,130 +1,122 @@
-:root{
+
+   
+:root {
     --blue:#11467d;
     --green:#4c7335;
     --white:#ffffff;
     color:var(--blue);
+    font-family: "Raleway", sans-serif;
 }
 
-body, header, main, footer,section, article, aside{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-
+body, header, main, footer, section, article, aside {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:16px;
 }
 
-main,header,nav ul,footer{
+main, header, nav ul, footer {
     display:grid;
     grid-template-columns:auto auto auto;
-
 }
-main section{
+
+main section {
     border:solid --white 1px;
     padding:1rem;
-
 }
 
-/* the following classes will govern the secitions and make them work within the grid system */
-.item1, .item8{
+/* the following classes will govern the sections and make them work within the grid system */
+.item1, .item8 {
     grid-column-start:1;
     grid-column-end:3;
 }
-.item6{
+.item6 {
     grid-column-start:1;
     grid-column-end:2;
 }
-
-.pic6, .pic4,.pic2{ 
-    background-image:url(../images/sj-images/sj-011.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+.pic6, .pic4, .pic2 {
+   background-image: url(../images/sj-images/sj-011.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-
 }
-
-.pic2{
-    background-image:url(../images/sj-images/sj-031.jpg);
+.pic2 {
+    background-image: url(../images/sj-images/sj-031.jpg);
 }
-.pic4{
-    background-image:url(../images/sj-images/sj-039.jpg);
+.pic4 {
+    background-image: url(../images/sj-images/sj-039.jpg);
 }
-.item7{
+.item7 {
     grid-column-start:2;
     grid-column-end:4;
 }
-.item9, .hero-orcas{
+.item9, .hero-orcas {
     grid-column-start:1;
     grid-column-end:4;
 }
 
-header{
+header {
     background-color: var(--white);
-    text-align:center;
-
+    text-align: center;
 }
-
-.logo1{
-    height:100px;
+.logo1 {
+    height: 100px;
     width:auto;
-    margin:10px auto;
-
+    margin:10px auto
 }
-header a, header p, nav a, label{
+header a, header p, nav a, label {
     color:var(--blue);
     text-decoration:none;
-    
 }
 .hero-orcas, main section {
-    background-image:url(../images/sj-images/sj-034.jpg);
+    background-image: url(../images/sj-images/sj-034.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
 }
-h1{
+h1 {
     color:var(--white);
     text-transform: uppercase;
-    text-shadow: var(--blue) 3px 3px 3px;
-
+    text-shadow: #074817 3px 3px 3px;
 }
-nav ul{
-    background-color: var(--white);
-
-}
-nav ul li{
+ nav ul {
+     background-color:var(--white);
+ }
+nav ul li {
     list-style:none;
     text-align: center;
     height: 100px;
-   
 }
-nav ul li:hover{
-    background-color: var(--blue);
+nav ul li:hover {
+    background-color:var(--green);
     color:var(--white);
 }
-
-main section{
+nav ul li a:hover {
+    color:var(--white);
+}
+main section {
     height: 400px;
+}
 
-}
-/* the following classes will create unique background images*/
+/* the following classes will create unique background images */
 
-.item1{
-    background-image:url(../images/sj-images/sj-015.jpg);
+.item1 {
+    background-image: url(../images/sj-images/sj-015.jpg);
 }
-.item3{
-    background-image:url(../images/sj-images/sj-025.jpg);
+.item3 {
+    background-image: url(../images/sj-images/sj-025.jpg);
 }
-.item5{
-    background-image:url(../images/sj-images/sj-068.jpg);
+.item5 {
+    background-image: url(../images/sj-images/sj-068.jpg);
 }
-.item7{
-    background-image:url(../images/sj-images/sj-022.jpg);
+.item7 {
+    background-image: url(../images/sj-images/sj-022.jpg);
 }
-.item2, .item4, .item6{
+.item2, .item4, .item6 {
     background-image:none;
 }
-footer{
-    padding: 1rem;
+footer {
+    padding:1rem
 }
-   
