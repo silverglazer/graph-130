@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Base Project</title>
+    <style>
+        h1,h2,p{
+            padding:10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/moblie.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        });
+        </script>
+        <main>
+            <section>
+                <h1> Grid Based Layout </h1>
+                <p>Graphic and web-designers work in the dimension that can be broken down to the rectangle, be it a page or a screen. This determines the shape of the grid as well. The lines within the grid are customized. Creators can build the grid themselves or rely on ready grid systems, while designers can use the same grid system throughout the whole piece of design, or create a new grid for each page to express their ideas.<a href="https://www.eleken.co/blog-posts/grid-layout-design-history-tips-and-best-examples" target="_blank"> eleken.co</a></p>
+            </section>
+            <section class="pure-g">
+                <article class="pure-u-1-3">
+                    <h2> Save me </h2>
+                    <p><i>Jelly Roll</i></p>
+                    
+                    <p>Somebody save me, me from myself<br>
+I've spent so long livin' in hell<br>
+They say my lifestyle is bad for my health<br>
+It's the only thing that seems to help<br>
+All of this drinkin' and smokin' is hopeless but feel like it's all that I need<br>
+Somethin' inside of me's broken, I hold on to anything that sets me free<br>
+I'm a lost cause<br>
+Baby, don't waste your time on me<br>
+I'm so damaged beyond repair<br>
+Life has shattered my hopes and my dreams<br>
+I'm a lost cause<br>
+Baby, don't waste your time on me<br>
+I'm so damaged beyond repair<br>
+Life has shattered my hopes and my dreams<br>
+What if the night sky was missin' the moon?<br>
+There were no shootin' stars to use wishin' on you<br>
+And all of my sorrows, I'd just wash them down<br>
+It's the only peace I've ever found</p>
+</article>
+                <article class="pure-u-1-3"></articleclass>
+                    <h2>Fall in the Fall</h2>
+                    <p><i> Jelly Roll</i></p>
+                    
+                    <p>Baby, if you love me, well, please love me now<br>
+'Cause baby, if you love me<br>
+It's my darkest hour, it's my darkest hour<br>
+If I did you wrong before, I won't do you wrong no more<br>
+It's all I've ever known, it's all I know, it's all I know<br>
+Baby, who's gon' catch you when you fall?<br>
+When you really need him, who's the one that you can call?<br>
+I don't give a fuck about it, you can have it all<br>
+'Cause the leaves only fall in the fall, yeah, they fall in the fall<br>
+Smokin' weed, drinkin' liquor<br>
+Some of my sins can't be forgiven<br>
+House on fire, can't leave the kitchen<br>
+I'm committed, motherfuckers can't see the vision<br>
+</article>
+                <article class="pure-u-1-3"></articleclass>
+                    <h2>I am Not Okay</h2>
+                    <p><i>Jelly Roll</i></p>
+                    <p>I am not okay
+I'm barely getting by<br>
+I'm losing track of days<br>
+And losing sleep at night<br>
+I am not okay<br>
+I'm hanging on the rails<br>
+So if I say I'm fine<br>
+Just know I learned to hide it well<br>
+I know, I can't be the only one<br>
+Who's holding on for dear life<br>
+But God knows, I know<br>
+When it's all said and done<br>
+I'm not okay<br>
+But it's all gonna be alright<br>
+It's not okay<br>
+But we're all gonna be alright</p>
+</article>
+
+            </section>
+            <section class="pure-g">
+                <img src="../images/photo1.jpg" class="pure-u-1-4 alt="alt="cove image">
+                <img src="../images/photo4.jpg" class="pure-u-1-4 alt="alt="cove image">
+                 <img src="../images/photo3.jpg" class="pure-u-1-4 alt="alt="cove image">
+                 <img src="../images/photo5.jpg" class="pure-u-1-4 alt="alt="cove image">
+
+            </section>
+            <section>
+                <p> EVCC spring 2025 David Mace</p>
+            </section>
+        </main>
+</body>
+</html>
