@@ -134,12 +134,43 @@ h2{
 .grid-container {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 50px;
+  align-items: center;
 }
 
+.text-content {
+  padding: 10px;
+}
 
+.image-content img{
+  width: 50%;
+  height: 50%;
+  border-radius: 8px;
+  float: left;
+}
+.image-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
 
+.grid-item img{
+  width:20%;
+  height: auto;
+  display: block;
+  
+}
 
+.grid-item:nth-child(1){
+  grid-row: 1;
+}
+.grid-item:nth-child(2){
+  grid-row: 2;
+}
+.grid-item:nth-child(3){
+  grid-row: 3;
+
+}
 
 
 
