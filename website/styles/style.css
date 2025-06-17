@@ -119,16 +119,28 @@ font-size: 25px;
 }
 
 img{
+  display: flex;
+  flex-direction: column;
   height: 150px;
   width: 150px;
   margin-top: 400px;
+ 
+  
 }
 .content{
+  height: 400px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   vertical-align: top;
+}
+.text_column{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  color: white;
 }
 
 
