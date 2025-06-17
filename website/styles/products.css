@@ -16,7 +16,6 @@ main {
 section{
     flex-grow:1;
     width:30%;
-
     margin: 10px;
     text-align: center;
     border-radius: 5px;
