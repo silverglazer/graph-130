@@ -3,8 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top: 100px;
+}
 a{
   text-decoration: none;
+  
  
 }
 ul{
@@ -22,17 +28,28 @@ body {
   flex-direction: column;
   height: 100vh;
   opacity: 2.0;
+  background-attachment: fixed;
+  margin:0px;
+  padding:0px;        
+  font-size: 16px;
+  margin:0px;
+  padding:0px;        
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  color: burlywood;
+
 
 }
+
 
 .header_content{
 display: flex;
 align-items: center;
 justify-content: space-between;
-min-height:60px;
-/* max-width: 1200px; */
-margin: 0 auto;
-padding: 0 30px;
+min-height:90px;
+padding: 30px;
+
 }
 .logo{
 height: 20px;
@@ -41,24 +58,24 @@ color: rgba(225,225,225,1);
 font-size: 25px;
 }
 
+
 .nav_list{
   display: flex;
   column-gap: 40px;
   position: absolute;
   left: 50%;
   margin-left: -260px;
+  
   }
 
-/* .header_1{
-  font-size: 50px;
-  margin-top: 100px;
-} */
+
 
 .nav_link{
   color: rgba(225,225,225,1);
   font-size: 25px;
   transition: all 0.4s;
   position: relative;
+  color: burlywood;
 
 }
 .nav_link::after{
@@ -91,12 +108,14 @@ font-size: 25px;
   bottom: 0;
   width: 100%;
   background: linear-gradient(to top, rgba(96,157,57,0.6), rgba(0,0,0,0.4));
-  position:absolute;
+ 
  
   }
-  .info{
-      color: black
-  } 
+ 
+  .email, .phone, .info{
+    color: white;
+    padding: 10px;
+  }
 
   .ms, .vs {
   text-align: center;
@@ -119,22 +138,23 @@ font-size: 25px;
 }
 
 img{
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  width: 150px;
-  margin-top: 400px;
- 
-  
-}
+  max-width: 350px;
+  height: auto;
+  width: 65%;
+
+
+  }
+
+
 .content{
   height: 400px;
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   vertical-align: top;
+  
 }
 .text_column{
   display: flex;
@@ -142,6 +162,33 @@ img{
   width: 150px;
   color: white;
 }
+
+a{ 
+  color: rgb(212, 95, 45)  ;
+}
+
+
+main {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 100px;
+}
+
+section{
+    flex-grow:1;
+    width:30%;
+
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding:5px;
+}
+section img{
+    padding: 15px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;}
 
 
 
@@ -160,6 +207,7 @@ img{
     .calendar h2 {
       text-align: center;
       height: 100px;
+      color: black;
    
     }
 
@@ -174,6 +222,7 @@ img{
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       margin-top: 10px;
+      color: black;
     }
 
     .day-name, .day {
