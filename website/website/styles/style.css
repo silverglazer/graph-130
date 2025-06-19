@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top: 100px;
+}
+a{
+  text-decoration: none;
+  
+ 
+}
+ul{
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('../images/barn.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  opacity: 2.0;
+  background-attachment: fixed;
+  margin:0px;
+  padding:0px;        
+  font-size: 16px;
+  margin:0px;
+  padding:0px;        
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  color: burlywood;
+
+
+}
+
+
+.header_content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+min-height:90px;
+padding: 30px;
+
+}
+.logo{
+height: 20px;
+display: block;
+color: rgba(225,225,225,1);
+font-size: 25px;
+}
+
+
+.nav_list{
+  display: flex;
+  column-gap: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -260px;
+  
+  }
+
+
+
+.nav_link{
+  color: rgba(225,225,225,1);
+  font-size: 25px;
+  transition: all 0.4s;
+  position: relative;
+  color: burlywood;
+
+}
+.nav_link::after{
+  content:'';
+  height: 2px;
+  width: 100%;
+  background-color:rgb(0,183,255);
+  position: absolute;
+  left:0;
+  bottom: -8px;
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.nav_link:hover::after{
+  opacity: 1;
+}
+.nav_link:hover{
+  color: #b01b38;
+}
+
+.footer {
+  background-color: #609D39;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(96,157,57,0.6), rgba(0,0,0,0.4));
+ 
+ 
+  }
+ 
+  .email, .phone, .info{
+    color: white;
+    padding: 10px;
+  }
+
+  .ms, .vs {
+  text-align: center;
+  font-size: 25px;
+  color: rgba(225,225,225,1);
+  margin-top: 10%;
+  
+}
+.container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.item{
+  display: flex;
+  flex: 1,0,0
+}
+.item, p{
+  text-align: center;
+}
+
+img{
+  max-width: 350px;
+  height: auto;
+  width: 65%;
+
+
+  }
+
+
+.content{
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  
+}
+.text_column{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  color: white;
+}
+
+a{ 
+  color: rgb(212, 95, 45)  ;
+}
+
+
+main {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 100px;
+}
+
+section{
+    flex-grow:1;
+    width:30%;
+
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding:5px;
+}
+section img{
+    padding: 15px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;}
+
+
+
+
+  .calendar {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 600px;
+
+
+  
+    }
+
+    .calendar h2 {
+      text-align: center;
+      height: 100px;
+      color: black;
+   
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      margin-top: 10px;
+      color: black;
+    }
+
+    .day-name, .day {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .day-name {
+      background: #eee;
+      font-weight: bold;
+    }
+
+    .day:hover {
+      background: #f0f8ff;
+      cursor:pointer;
+    }
+
+    .event {
+      background: #4caf50;
+      color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 2px;
+      border-radius: 3px;
+    }
+
+
+.day-name, .days,.calendar-header, .calendar h2, .calendar{
+  margin:auto;
+
+}
