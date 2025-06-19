@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-main {
-  display:flex;
-  flex-wrap:wrap;
-  margin-top: 100px;
-}
 a{
   text-decoration: none;
  
@@ -27,13 +22,6 @@ body {
   flex-direction: column;
   height: 100vh;
   opacity: 2.0;
-  background-attachment: fixed;
-  margin:0px;
-  padding:0px;        
-  font-size: 16px;
-  /* box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-  color: burlywood; */
 
 }
 
@@ -41,8 +29,10 @@ body {
 display: flex;
 align-items: center;
 justify-content: space-between;
-min-height:90px;
-padding: 30px;
+min-height:60px;
+/* max-width: 1200px; */
+margin: 0 auto;
+padding: 0 30px;
 }
 .logo{
 height: 20px;
@@ -59,7 +49,10 @@ font-size: 25px;
   margin-left: -260px;
   }
 
-
+/* .header_1{
+  font-size: 50px;
+  margin-top: 100px;
+} */
 
 .nav_link{
   color: rgba(225,225,225,1);
@@ -98,14 +91,12 @@ font-size: 25px;
   bottom: 0;
   width: 100%;
   background: linear-gradient(to top, rgba(96,157,57,0.6), rgba(0,0,0,0.4));
- 
+  position:absolute;
  
   }
- 
-  .email, .phone, .info{
-    color: white;
-    padding: 10px;
-  }
+  .info{
+      color: black
+  } 
 
   .ms, .vs {
   text-align: center;
@@ -128,36 +119,28 @@ font-size: 25px;
 }
 
 img{
-  max-width: 350px;
-  height: auto;
-  width: 65%;
-
-
-  }
-  .header_1{
-    color: white;
-   
-  }
-
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 150px;
+  margin-top: 400px;
+ 
+  
+}
 .content{
   height: 400px;
-  width: 350px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   vertical-align: top;
-  
 }
 .text_column{
   display: flex;
   flex-direction: column;
   width: 150px;
   color: white;
-}
-
-a{ 
-  color: rgb(212, 95, 45)  ;
 }
 
 
